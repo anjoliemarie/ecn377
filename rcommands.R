@@ -26,3 +26,18 @@ b = 2
 covXY = 0
 parallelogram = a^2 * varX * b^2 * varY + 2 * a * b * covXY
 
+# solving b1 and b0
+b1 <- cov(x,y) / var(x) #population regression slope      
+b0 <- mean(y) - b1 * mean
+
+# cov(x,y) = E[XY] - E[x]E[Y]
+# E[y|X=x] = b0 +b1x
+
+# y = b0 + b1x
+
+# colGPA = b0 + b1 * hsGPA + u
+
+#wage = b0 + b1educ + u
+# changein wage = b1 * change in educ
+
+# cov(x,y) = E[XY]-E[X]E[Y]

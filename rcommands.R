@@ -41,3 +41,30 @@ b0 <- mean(y) - b1 * mean
 # changein wage = b1 * change in educ
 
 # cov(x,y) = E[XY]-E[X]E[Y]
+
+# SST = SSE + SSR
+
+# OLS slope = Bhat1 = sample cov / sample var
+
+# OLS intercept = Bhat0 = ymean - b1 * xmean
+
+# uhat = y - yhat
+
+# deltayhat = bhat1 * deltax 
+
+# find SSR = sum(Yi - Yhati)^2
+yhat = 4 + (3/10) * x
+(5,4) (2,12) (8,9)
+x = c(5,2,8)
+y = c(4,12,9)
+residuals = y - yhat
+residuals^2
+ssr = sum(residuals^2)
+ssr = 63.77
+
+R^2 = SSE / SST
+R^2 = 1 - SSR/SST
+
+
+
+
